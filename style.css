@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    gap: 9px;
+    overflow: hidden;
+}
+
+.left {
+    width: 25vw;
+    height: 100vh;
+    /* padding: 20px; */
+}
+
+.right {
+    width: 75vw;
+    height: 100vh;
+    position: relative;
+}
+
+.home {
+    padding: 20px;
+}
+
+.home ul li {
+    width: 25px;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 10px;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+    padding: 23px 14px;
+    font-size: 12px;
+    /* padding-left: 10%;; */
+}
+
+.heading img {
+    width: 25px;
+}
+
+.footer {
+    display: flex;
+    gap: 5px;
+    font-size: 11px;
+    color: grey;
+    bottom: 0;
+    position: absolute;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+.library {
+    min-height: 80vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #343434;
+}
+
+.header .nav {
+    margin-top: 3px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.header>* {
+    padding: 18px;
+}
+
+.right {
+    margin: 29px 0;
+}
+
+.buttons>* {
+    margin: 0 10px;
+}
+
+.s-btn {
+    background: none;
+    background-color: #343434;
+    color: grey;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.s-btn:hover {
+    color: white;
+    font-size: 15px;
+}
+
+.log-btn {
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    width: 82px;
+    padding: 8px;
+    height: 34px;
+    border-radius: 242px;
+}
+
+.log-btn:hover {
+    /* width: 83px;
+    height: 35px; */
+    font-weight: bold;
+}
+
+.spotifyPlaylists {
+    padding: 14px;
+}
+
+.card {
+    width: 200px;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.cardContainer {
+    margin: 14px;
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 78vh;
+}
+
+.play {
+    position: absolute;
+    top: 154px;
+    right: 17px;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.songtime, .songinfo{
+    color:white;
+    padding: 0 12px;
+}
+.playbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    left: 0;
+    padding-top: 3px;
+    height: 51px;
+}
+
+.songbuttons {
+    padding: 10px;
+}
+
+.songLists {
+    max-height: 666px;
+    /* overflow: auto; */
+}
+
+.songLists ul {
+    padding: 0 12PX;
+}
+
+.songLists ul li {
+    display: flex;
+    list-style-type: none;
+    gap: 19px;
+    padding: 75px 0;
+    margin: 9px 0;
+    padding: 16px 0px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    width: 444px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+.playnow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 123px;
+    height: 47px;
+    padding: 0 10px;
+}
+
+.seekbar{
+    width: 40%;
+    height: 4px;
+    background-color: #343434;
+    position: absolute;
+    bottom: 14px;
+    cursor: pointer;
+    border-radius: 2px ;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 0%;
+    transition: left(100%) 0.5s ;
+    /* transform: translateX(-50%); */
+}
+
+.sonbuttons img{
+    cursor: pointer;
+}

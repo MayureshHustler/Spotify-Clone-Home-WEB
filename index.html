@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- Web Player: Music For Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left" style="margin: 0; padding: 0;">
+            <div class="home bg-grey rounded ">
+                <div class="logo"><img class="invert" src="logo.svg" alt=""></img></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert w-1" src="library.svg" alt="" srcset=""></img>
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="songLists">
+                    <ul>
+                        <li>
+                            <img class="invert" style="width: 34px; "  src="music.svg" alt="Song 1">
+                            <div class="info">
+                                <div>Under the influence</div>
+                                <div>By Chris Brown</div>
+                            </div>
+                            <div class="playnow">
+                                <img class="invert" style="cursor:pointer" src="play1.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="invert" style="width: 34px; "  src="music.svg" alt="Song 1">
+                            <div class="info">
+                                <div>Just my type</div>
+                                <div>By The Vamps</div>
+                            </div>
+                            <div class="playnow">
+                                <img class="invert" style="cursor:pointer" src="play1.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="invert" style="width: 34px; "  src="music.svg" alt="Song 1">
+                            <div class="info">
+                                <div>Snowman</div>
+                                <div>By Sia</div>
+                            </div>
+                            <div class="playnow">
+                                <img class="invert" style="cursor:pointer" src="play1.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <img class="invert" style="width: 34px; "  src="music.svg" alt="Song 1">
+                            <div class="info">
+                                <div>Not Like Us</div>
+                                <div>By Kendrick Lamar</div>
+                            </div>
+                            <div class="playnow">
+                                <img class="invert" style="cursor:pointer" src="play1.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right bg-grey rounded" style="margin: 0; padding: 0;">
+            <div class="header">
+                <div class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="s-btn">Sign Up</button>
+                    <button class="log-btn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">
+                <h1 style="margin-left: 14px;">Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                            alt="">
+                        <p>With Sachin-Jigar, Mithoon, Pritam and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB"
+                            alt="">
+                        <p>With Karan Aujla, AP Dhillon, Shubh and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en-GB"
+                            alt="">
+                        <p>With Abhijeet, Jatin-Lalit, Kumar Sanu and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en-GB"
+                            alt="">
+                        <p>With A.R. Rahman, Atif Aslam, Shankar-Ehsaan-Loy and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en-GB"
+                            alt="">
+                        <p>With Harris Jayaraj, Anirudh Ravichander, Sid Sriram and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB"
+                            alt="">
+                        <p>With Mohit Chauhan, Armaan Malik, Atif Aslam and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en"
+                            alt="">
+                        <p>With Abhijeet, Asha Bhosle, Jatin-Lalit and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en-GB"
+                            alt="">
+                        <p>With Badshah, Diljit Dosanjh, Guru Randhawa and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/61JrslREXq98hurYL2hYoc/en-GB"
+                            alt="">
+                        <p>With Mohammed Rafi, Kishore Kumar, Mukesh and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2oSONSC9zQ4UonDKnLqksx/en"
+                            alt="">
+                        <p>With Pritam, Sachin-Jigar, KK and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en"
+                            alt="">
+                        <p>With Mohammed Rafi, Mukesh, Asha Bhosle and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8482a04c37e7ae0d899edb198e"
+                            alt="">
+                        <p>The 100 most streamed songs on Spotify ever, in correct order</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0Y5tJX1MQlPlqiwlOH1tJY/en"
+                            alt="">
+                        <p>With Lil Uzi Vert, Kendrick Lamar, Gunna and more</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg style=" background-color: #1fdf64; border-radius: 22px"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="46" height="46"
+                                color="#000000" fill="none">
+                                <circle cx="12" cy="12" r="10" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6M2wZ9GZgrQXHCFfjv46we/en"
+                            alt="">
+                        <p>With Harry Styles, Calvin Harris, Shawn Mendes and more</p>
+                    </div>
+
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="abovebar">
+                            <div class="songinfo">                             
+                            </div>
+                            <div class="songbuttons">
+                                <img id="previous" src="prev.svg" alt="">
+                                <img id="play" src="pause.svg" alt="">
+                                <img id="next" src="next.svg" alt="">
+                            </div>
+                            <div class="songtime">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
